@@ -10,7 +10,7 @@ api_key = os.getenv('API_KEY')
 df = pd.read_excel('turkey.xlsx', usecols=['lat', 'lng'])
 
 json_data = []
-i = 1
+i = 0
 for index, row in df.iterrows():
     lat = row['lat']
     lng = row['lng']
